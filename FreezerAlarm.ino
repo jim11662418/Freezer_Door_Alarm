@@ -32,8 +32,8 @@
 #define D9  3           // RX0 (Serial console)
 #define D10 1           // TX0 (Serial console) 
 
-#define WIFI_SSID "traXu74P"              // WIFI network name
-#define WIFI_PASSWORD "Zjx9rUVYyT"        // WIFI network password
+#define WIFI_SSID "********"              // WIFI network name
+#define WIFI_PASSWORD "********"          // WIFI network password
 
 #define REDLED D6                         // red part of RGB LED connected to D6
 #define GREENLED D0                       // green part of RGB LED connected to D0
@@ -43,7 +43,7 @@
 #define SWITCHPIN D2                      // reed switch for freezer door connected to D2
 #define INTERVAL 50                       // 50 milliseconds for switch debouncing
 
-//#define TESTING                           // when TESTING is defined, reduces door open timout period to 5 seconds, does not send text message
+//#define TESTING                         // when TESTING is defined, reduces door open timout period to 5 seconds, does not send text message
 
 #ifdef TESTING
    #define ALARM_DELAY 5                  // if testing, freezer door open for 5 seconds sounds alarm
@@ -54,7 +54,7 @@
 #define ONE_WIRE_BUS D3                   // DS18B20 1-wire temperature sensor connected to D3
 
 // ThingSpeak Settings
-String thingspeakWriteAPIKey = "TTYHJ6EE7BOHGEQV"; // write API key for the ThingSpeak Channel
+String thingspeakWriteAPIKey = "**************"; // write API key for the ThingSpeak Channel
 const char* thingspeakServer = "api.thingspeak.com";
 
 // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
@@ -239,8 +239,8 @@ void loop() {
 void sendText(){
    String subject = "Freezer Door Alarm!";
    String msgBody = "The freezer door is open at "+NTP.getTimeDateString()+".";
-   String sendTo1 = "7034022536@vtext.com";      // Jim's number
-   String sendTo2 = "2023024881@vtext.com";      // El's number
+   String sendTo1 = "**********@vtext.com";      // Jim's number
+   String sendTo2 = "**********@vtext.com";      // El's number
    #ifndef TESTING 
       if(gsender->Subject(subject)->Send(sendTo1,msgBody)) 
          Serial.println("Text message send to "+sendTo1+".");
