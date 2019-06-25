@@ -5,6 +5,8 @@
 // Web page shows the current time, uptime, freezer temperature and door status.
 // Every 2 minutes, post the freezer temperature to a ThingSpeak graph.
 //
+// Uses Gsender class by Boris Shobat to send e-mails from Gmail account using Arduino core for ESP8266 WiFi chip .
+//
 // Version 1.0    initial release
 //         2.0    pin change interrupt replaces pin polling, reworked main loop
 //         2.1    added OTA updates
