@@ -1,9 +1,9 @@
 //---------------------------------------------------------------------------------------------------------
 // Freezer Door Monitor 
-// monitor the freezer door with a magnetic reed switch
-// if the garage freezer door is open for more than 60 seconds, sounds audible alarm and sends text message.
-// web page shows the current time, uptime, freezer temperature and door status
-// every 2 minutes, post the freezer temperature to a ThingSpeak graph
+// Monitor the freezer door with a magnetic reed switch. 
+// If the garage freezer door is open for more than 60 seconds, sounds audible alarm and sends text message.
+// Web page shows the current time, uptime, freezer temperature and door status.
+// Every 2 minutes, post the freezer temperature to a ThingSpeak graph.
 //
 // Version 1.0    initial release
 //         2.0    pin change interrupt replaces pin polling, reworked main loop
