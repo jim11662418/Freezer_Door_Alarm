@@ -54,8 +54,8 @@
 #define INTERRUPTPIN D2 // the ESP8266 supports interrupts using any GPIO except GPIO16
 #define DEBOUNCE 50     // 50 milliseconds for switch debouncing
 
-#define WIFI_SSID "XXXXXXXX"             // WIFI network name
-#define WIFI_PASSWORD "XXXXXXXX"         // WIFI network password
+#define WIFI_SSID "**********"            // WIFI network name
+#define WIFI_PASSWORD "**********"        // WIFI network password
 
 #define REDLED D6                         // red RGB LED connected to D6
 #define GREENLED D0                       // green RGB LED connected to D0
@@ -78,7 +78,7 @@ void toneTimerISR();
 
 // ThingSpeak Settings
 unsigned long tsChannelNumber = 2;
-const char * tsWriteAPIkey = "XXXXXXXXXXXX";
+const char * tsWriteAPIkey = "***************";
 
 // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
 OneWire oneWire(ONE_WIRE_BUS);
@@ -87,7 +87,7 @@ OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
 // email sender for the text messages...
-EMailSender emailSend("XXXXXXXXXXX@gmail.com", "XXXXXXXXXX");
+EMailSender emailSend("************@gmail.com", "**********");
 
 Ticker oneSecondTimer,toneTimer;
 WiFiClient client;
