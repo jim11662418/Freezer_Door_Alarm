@@ -230,7 +230,7 @@ void loop() {
       message.message = "The freezer door is open at "+NTP.getTimeDateString()+".";
             
       Serial.println("Sending text to Jim's number...");
-      EMailSender::Response resp = emailSend.send("7034022536@tmomail.net", message);
+      EMailSender::Response resp = emailSend.send("XXXXXXXXXX@tmomail.net", message);
       Serial.print("Response: "); Serial.println(resp.desc); 
       if (resp.status)                                 // if successful...
          sendEmailFlag = false;
